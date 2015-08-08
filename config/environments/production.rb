@@ -76,4 +76,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+# Isaiya this is required for Heroku and for your future host site also remember to go to the 2:11 on day 14 lesson to on your tutorial 
+#to find out how you format line 82 properly.
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end

@@ -1,6 +1,10 @@
 Pinteresting::Application.routes.draw do
  root "pages#home"
- get "about" => "pages#about" # Creates the path for our about_ page on
+ get "about" => "pages#about"
+ get "instructions" => "pages#instructions"
+ get "team" => "pages#team"
+
+  # Creates the path for our about_ page on
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

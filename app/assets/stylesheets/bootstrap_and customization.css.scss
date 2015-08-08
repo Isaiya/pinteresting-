@@ -1,0 +1,17 @@
+$body-bg: #bdc3c7;
+$navbar-inverse-bg: #ecf0f1;
+$navbar-height:  45px;
+$navbar-inverse-link-color: black;
+$brand-primary: black;
+
+
+@import 'bootstrap-sprockets';    
+@import 'bootstrap';
+
+.center { 
+	text-align: center;
+}
+
+.navbar-brand {
+		font-weight: bold;
+}

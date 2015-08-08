@@ -21,6 +21,11 @@ module Pinteresting
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
+    
+    #Isaiya This is required for Heroku. Should you run in to an error
+    #cont. consider deleting line 29 below and reviewing day 14 lesson2 7:30 of video.
+    config.assets.initialize_on_precompile = false
+
     config.active_record.raise_in_transactional_callbacks = true
   end
 end
