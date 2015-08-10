@@ -2,9 +2,12 @@
 <div class="jumbotron center">
 	<h1>Welcome to</h1>
 	<h1>W-9NINE!!! </h1>
+	<% if user_signed_in? %>
+	 Hello, and Welcome Valued Member
+	<% else %>
+	<p> Members Click Here to  <%= link_to "Sign In", new_user_session_path, class: "btn btn-default btn-lg" %>.</p>
 	
-	<p> Members Click Here to  <%= link_to "Sign In", "#", class: "btn btn-default btn-lg" %>.</p>
-	
-	<p> Esteemed Guest Please Click Here to  <%= link_to "Sign up", "#", class: "btn btn-default btn-lg" %>.</p>
-	
+	<p> Esteemed Guest Please Click Here to  <%= link_to "Sign up", new_user_registration_path, class: "btn btn-default btn-lg" %>.</p>
+	<% end %>
+
  </div>
